@@ -591,7 +591,7 @@ strong {
   right: 0;
   left: auto;
   text-align: right;
-  min-width: 680px;
+  min-width: 800px;
   min-height: 680px;
   padding: 100px 100px 50px 100px;
 }
@@ -859,6 +859,75 @@ strong {
 
 
 /* End TEst */
+
+/* Technology Ecosystem */
+.technology_section-padding {
+  /* padding-top: 50px; */
+  padding-bottom: 50px;
+}
+.technology-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+.tech-logo {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo-standard {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+}
+
+.logo-standard:hover {
+  filter: brightness(1.2);
+}
+
+.tech-logo::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 12px;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, bottom 0.3s ease;
+  z-index: 10;
+}
+
+.tech-logo:hover::after {
+  opacity: 1;
+  visibility: visible;
+  bottom: -70px;
+}
+/* End of Technology Ecosystem */
+
 
 /*---------------------------------------
   DONATE              
