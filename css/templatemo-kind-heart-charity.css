@@ -1834,4 +1834,41 @@ blockquote::before {
     padding: 25px;
   }
 }
+/* Chane on 3rd April */
+@media screen and (max-width: 768px) {
+  #hero-slide .carousel-caption {
+    clip-path: none !important;
+    text-align: center;
+    left: 0 !important;
+    right: 0 !important;
+    padding: 20px !important;
+    background: rgba(255, 255, 255, 0.85); /* Slight transparency for image behind */
+    min-width: 100% !important;
+    min-height: auto !important;
+    bottom: 0 !important;
+    top: auto !important;
+  }
 
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .carousel-image {
+    height: auto !important;
+    min-height: 350px !important;
+    object-fit: cover;
+  }
+
+  .carousel-item {
+    height: auto !important;
+  }
+
+  .hero-section-full-height {
+    height: auto !important;
+  }
+}
